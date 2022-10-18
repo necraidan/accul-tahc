@@ -1,0 +1,8 @@
+<!-- See https://github.com/angular/angular/issues/43727 -->
+
+<app-conversation
+  *ngFor="let user of users;  trackBy:trackByUserId"
+  [user]="user"
+  [messages]="(messages$ | async) ?? []"
+  (messageSent)="onMessageSent($event)"
+></app-conversation>

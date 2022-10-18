@@ -1,0 +1,8 @@
+<div data-karma="username">Chat {{ user.name }}</div>
+
+<app-messages-container [messages]="messages" [user]="user"></app-messages-container>
+
+<form class="chat" [formGroup]="chatForm" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="text" placeholder="Type your message ..." />
+  <button type="submit" [disabled]="!chatForm.valid">OK</button>
+</form>

@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 75%;
+
+    &__text {
+      padding: 8px 14px;
+      word-break: break-word;
+      background-color: #e5e5ea;
+      color: #000;
+      border-radius: 18px;
+      line-height: 1.25;
+    }
+
+    &__author {
+      font-weight: bold;
+    }
+
+    &__time {
+      font-size: 10px;
+      font-style: italic;
+    }
+  }
+
+  &.is-author {
+    align-items: flex-end;
+    .message {
+      align-items: flex-end;
+      &__text {
+        background-color: #248bf5;
+        color: #fff;
+      }
+    }
+  }
+}

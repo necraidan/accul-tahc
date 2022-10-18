@@ -1,0 +1,5 @@
+<div class="message">
+  <span class="message__author">{{ message.user.name }}</span>
+  <div class="message__text">{{ message.text }}</div>
+  <span class="message__time">{{ message.time | date:'d/MM/yyyy - H:mm' }}</span>
+</div>

@@ -1,0 +1,27 @@
+{
+  "singleQuote": true,
+  "trailingComma": "none",
+  "printWidth": 140,
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": [".component.html", ".page.html"],
+      "options": {
+        "parser": "angular"
+      }
+    },
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "html"
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "options": {
+        "parser": "typescript",
+        "printWidth": 200
+      }
+    }
+  ]
+}
